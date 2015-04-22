@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDABA4C41AE8452E00850E20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA4C31AE8452E00850E20 /* main.m */; };
+		EDABA4C71AE8452E00850E20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA4C61AE8452E00850E20 /* AppDelegate.m */; };
+		EDABA4CA1AE8452E00850E20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA4C91AE8452E00850E20 /* ViewController.m */; };
+		EDABA4CD1AE8452E00850E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDABA4CB1AE8452E00850E20 /* Main.storyboard */; };
+		EDABA4CF1AE8452E00850E20 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDABA4CE1AE8452E00850E20 /* Images.xcassets */; };
+		EDABA4D21AE8452E00850E20 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDABA4D01AE8452E00850E20 /* LaunchScreen.xib */; };
+		EDABA4DE1AE8452E00850E20 /* MeiosisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA4DD1AE8452E00850E20 /* MeiosisTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDABA4D81AE8452E00850E20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDABA4B61AE8452E00850E20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDABA4BD1AE8452E00850E20;
+			remoteInfo = Meiosis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EDABA4BE1AE8452E00850E20 /* Meiosis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meiosis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDABA4C21AE8452E00850E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDABA4C31AE8452E00850E20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDABA4C51AE8452E00850E20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDABA4C61AE8452E00850E20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDABA4C81AE8452E00850E20 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EDABA4C91AE8452E00850E20 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDABA4CC1AE8452E00850E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDABA4CE1AE8452E00850E20 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EDABA4D11AE8452E00850E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EDABA4D71AE8452E00850E20 /* MeiosisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeiosisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDABA4DC1AE8452E00850E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDABA4DD1AE8452E00850E20 /* MeiosisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeiosisTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDABA4BB1AE8452E00850E20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDABA4D41AE8452E00850E20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDABA4B51AE8452E00850E20 = {
+			isa = PBXGroup;
+			children = (
+				EDABA4C01AE8452E00850E20 /* Meiosis */,
+				EDABA4DA1AE8452E00850E20 /* MeiosisTests */,
+				EDABA4BF1AE8452E00850E20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDABA4BF1AE8452E00850E20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDABA4BE1AE8452E00850E20 /* Meiosis.app */,
+				EDABA4D71AE8452E00850E20 /* MeiosisTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDABA4C01AE8452E00850E20 /* Meiosis */ = {
+			isa = PBXGroup;
+			children = (
+				EDABA4C51AE8452E00850E20 /* AppDelegate.h */,
+				EDABA4C61AE8452E00850E20 /* AppDelegate.m */,
+				EDABA4C81AE8452E00850E20 /* ViewController.h */,
+				EDABA4C91AE8452E00850E20 /* ViewController.m */,
+				EDABA4CB1AE8452E00850E20 /* Main.storyboard */,
+				EDABA4CE1AE8452E00850E20 /* Images.xcassets */,
+				EDABA4D01AE8452E00850E20 /* LaunchScreen.xib */,
+				EDABA4C11AE8452E00850E20 /* Supporting Files */,
+			);
+			path = Meiosis;
+			sourceTree = "<group>";
+		};
+		EDABA4C11AE8452E00850E20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDABA4C21AE8452E00850E20 /* Info.plist */,
+				EDABA4C31AE8452E00850E20 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDABA4DA1AE8452E00850E20 /* MeiosisTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDABA4DD1AE8452E00850E20 /* MeiosisTests.m */,
+				EDABA4DB1AE8452E00850E20 /* Supporting Files */,
+			);
+			path = MeiosisTests;
+			sourceTree = "<group>";
+		};
+		EDABA4DB1AE8452E00850E20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDABA4DC1AE8452E00850E20 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDABA4BD1AE8452E00850E20 /* Meiosis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDABA4E11AE8452E00850E20 /* Build configuration list for PBXNativeTarget "Meiosis" */;
+			buildPhases = (
+				EDABA4BA1AE8452E00850E20 /* Sources */,
+				EDABA4BB1AE8452E00850E20 /* Frameworks */,
+				EDABA4BC1AE8452E00850E20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meiosis;
+			productName = Meiosis;
+			productReference = EDABA4BE1AE8452E00850E20 /* Meiosis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDABA4D61AE8452E00850E20 /* MeiosisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDABA4E41AE8452E00850E20 /* Build configuration list for PBXNativeTarget "MeiosisTests" */;
+			buildPhases = (
+				EDABA4D31AE8452E00850E20 /* Sources */,
+				EDABA4D41AE8452E00850E20 /* Frameworks */,
+				EDABA4D51AE8452E00850E20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDABA4D91AE8452E00850E20 /* PBXTargetDependency */,
+			);
+			name = MeiosisTests;
+			productName = MeiosisTests;
+			productReference = EDABA4D71AE8452E00850E20 /* MeiosisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDABA4B61AE8452E00850E20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Cole Hudson";
+				TargetAttributes = {
+					EDABA4BD1AE8452E00850E20 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					EDABA4D61AE8452E00850E20 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = EDABA4BD1AE8452E00850E20;
+					};
+				};
+			};
+			buildConfigurationList = EDABA4B91AE8452E00850E20 /* Build configuration list for PBXProject "Meiosis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDABA4B51AE8452E00850E20;
+			productRefGroup = EDABA4BF1AE8452E00850E20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDABA4BD1AE8452E00850E20 /* Meiosis */,
+				EDABA4D61AE8452E00850E20 /* MeiosisTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDABA4BC1AE8452E00850E20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDABA4CD1AE8452E00850E20 /* Main.storyboard in Resources */,
+				EDABA4D21AE8452E00850E20 /* LaunchScreen.xib in Resources */,
+				EDABA4CF1AE8452E00850E20 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDABA4D51AE8452E00850E20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDABA4BA1AE8452E00850E20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDABA4CA1AE8452E00850E20 /* ViewController.m in Sources */,
+				EDABA4C71AE8452E00850E20 /* AppDelegate.m in Sources */,
+				EDABA4C41AE8452E00850E20 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDABA4D31AE8452E00850E20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDABA4DE1AE8452E00850E20 /* MeiosisTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDABA4D91AE8452E00850E20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDABA4BD1AE8452E00850E20 /* Meiosis */;
+			targetProxy = EDABA4D81AE8452E00850E20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDABA4CB1AE8452E00850E20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDABA4CC1AE8452E00850E20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDABA4D01AE8452E00850E20 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDABA4D11AE8452E00850E20 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDABA4DF1AE8452E00850E20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EDABA4E01AE8452E00850E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDABA4E21AE8452E00850E20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Meiosis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EDABA4E31AE8452E00850E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Meiosis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EDABA4E51AE8452E00850E20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MeiosisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meiosis.app/Meiosis";
+			};
+			name = Debug;
+		};
+		EDABA4E61AE8452E00850E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MeiosisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meiosis.app/Meiosis";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDABA4B91AE8452E00850E20 /* Build configuration list for PBXProject "Meiosis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDABA4DF1AE8452E00850E20 /* Debug */,
+				EDABA4E01AE8452E00850E20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDABA4E11AE8452E00850E20 /* Build configuration list for PBXNativeTarget "Meiosis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDABA4E21AE8452E00850E20 /* Debug */,
+				EDABA4E31AE8452E00850E20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EDABA4E41AE8452E00850E20 /* Build configuration list for PBXNativeTarget "MeiosisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDABA4E51AE8452E00850E20 /* Debug */,
+				EDABA4E61AE8452E00850E20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDABA4B61AE8452E00850E20 /* Project object */;
+}
