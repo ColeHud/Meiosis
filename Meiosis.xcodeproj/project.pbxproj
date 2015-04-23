@@ -14,6 +14,7 @@
 		EDABA4CF1AE8452E00850E20 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDABA4CE1AE8452E00850E20 /* Images.xcassets */; };
 		EDABA4D21AE8452E00850E20 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDABA4D01AE8452E00850E20 /* LaunchScreen.xib */; };
 		EDABA4DE1AE8452E00850E20 /* MeiosisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA4DD1AE8452E00850E20 /* MeiosisTests.m */; };
+		EDABA4E81AE8497200850E20 /* LaunchLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EDABA4E71AE8497200850E20 /* LaunchLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		EDABA4D71AE8452E00850E20 /* MeiosisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeiosisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDABA4DC1AE8452E00850E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDABA4DD1AE8452E00850E20 /* MeiosisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeiosisTests.m; sourceTree = "<group>"; };
+		EDABA4E71AE8497200850E20 /* LaunchLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LaunchLogo.png; path = Artwork/LaunchLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				EDABA4C01AE8452E00850E20 /* Meiosis */,
 				EDABA4DA1AE8452E00850E20 /* MeiosisTests */,
 				EDABA4BF1AE8452E00850E20 /* Products */,
+				EDABA4E71AE8497200850E20 /* LaunchLogo.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDABA4CD1AE8452E00850E20 /* Main.storyboard in Resources */,
+				EDABA4E81AE8497200850E20 /* LaunchLogo.png in Resources */,
 				EDABA4D21AE8452E00850E20 /* LaunchScreen.xib in Resources */,
 				EDABA4CF1AE8452E00850E20 /* Images.xcassets in Resources */,
 			);
