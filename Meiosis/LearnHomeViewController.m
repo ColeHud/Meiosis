@@ -18,6 +18,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    /*Change color of title
+    [self.navigationController.navigationBar
+     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor colorWithRed:177.0f/255.0f
+                                                                               green:235.0f/255.0f
+                                                                                blue:0.0f/255.0f
+                                                                               alpha:1.0f]}];
+     */
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,5 +43,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+//start button clicked
+- (IBAction)startButtonClicked:(id)sender
+{
+    self.startButton = sender;
+    [sender removeFromSuperview];
+    
+    
+}
+
 
 @end
