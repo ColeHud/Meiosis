@@ -4,25 +4,28 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--Meiosis-->
+        <!--Home-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" userLabel="Home" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFU-tI-gGP">
                                 <rect key="frame" x="96" y="335" width="129" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
-                                <state key="normal" title="Compete">
+                                <state key="normal" title="Game">
                                     <color key="titleColor" red="0.25098039220000001" green="0.66666666669999997" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="eps-xt-aTD" kind="show" id="fUc-dd-rIU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WW-gv-Oz5">
                                 <rect key="frame" x="121" y="170" width="79" height="36"/>
@@ -31,6 +34,9 @@
                                     <color key="titleColor" red="1" green="0.15294117647058825" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Yun-oO-fHZ" kind="show" id="FvQ-Yp-Nfg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.63529411764705879" green="0.93333333333333335" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -40,7 +46,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-111" y="338"/>
+            <point key="canvasLocation" x="221" y="-38"/>
+        </scene>
+        <!--Learn Home-->
+        <scene sceneID="kh9-nf-eCr">
+            <objects>
+                <viewController title="Learn" id="Yun-oO-fHZ" userLabel="Learn Home" customClass="LearnHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lf1-Dq-6Go"/>
+                        <viewControllerLayoutGuide type="bottom" id="tqJ-CX-GOd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RoZ-cM-Mdd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Learn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daT-Kc-I1N">
+                                <rect key="frame" x="85" y="87" width="151" height="57"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="31"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.61960784313725492" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IFD-Ji-hVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="-38"/>
+        </scene>
+        <!--Game Home Screen-->
+        <scene sceneID="xt8-96-YyN">
+            <objects>
+                <viewController title="Game" id="eps-xt-aTD" userLabel="Game Home Screen" customClass="GameHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QRf-S6-Ups"/>
+                        <viewControllerLayoutGuide type="bottom" id="nK8-eL-mPC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="agV-nS-4Uu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESU-L2-Dc8">
+                                <rect key="frame" x="85" y="116" width="151" height="57"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="31"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.15294117647058825" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Hd-vt-gXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="677"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rCz-ck-zso">
@@ -48,12 +108,12 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mZA-ob-X7C" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LOT-jT-ExQ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="LOT-jT-ExQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.25098039215686274" green="0.66666666666666663" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.25098039215686274" green="0.66666666666666663" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.25098039215686274" green="0.66666666666666663" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.89405629919754259" green="0.95686274509803926" blue="0.90568719824387489" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.2615612866" green="0.69378956510000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -62,7 +122,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yrz-6A-gej" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-513" y="338"/>
+            <point key="canvasLocation" x="-245" y="-38"/>
         </scene>
     </scenes>
 </document>
