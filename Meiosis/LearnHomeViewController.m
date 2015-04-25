@@ -10,6 +10,13 @@
 
 @interface LearnHomeViewController ()
 
+//toolbar buttons
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *previousButton;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *playButton;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *nextButton;
+@property (strong, nonatomic) IBOutlet UIImageView *mainImage;
+@property (strong, nonatomic) UIImage *image;
+
 @end
 
 @implementation LearnHomeViewController
@@ -26,6 +33,7 @@
                                                                                 blue:0.0f/255.0f
                                                                                alpha:1.0f]}];
      */
+    self.image = [UIImage imageNamed:@"LaunchLogo.png"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,14 +52,27 @@
 }
 */
 
-//start button clicked
-- (IBAction)startButtonClicked:(id)sender
+//previous button clicked
+- (IBAction)previousButtonClicked:(UIBarButtonItem *)sender
 {
-    self.startButton = sender;
-    [sender removeFromSuperview];
-    
-    
+    NSLog(@"Previous clicked");
 }
+
+//play button clicked
+- (IBAction)playButtonClicked:(UIBarButtonItem *)sender
+{
+    NSLog(@"Play clicked");
+}
+
+//next button clicked
+- (IBAction)nextButtonClicked:(UIBarButtonItem *)sender
+{
+    NSLog(@"Next clicked");
+    [self.mainImage setImage:self.image];
+}
+
+
+
 
 
 @end

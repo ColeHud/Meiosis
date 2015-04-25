@@ -90,11 +90,9 @@
 		EDABA4C01AE8452E00850E20 /* Meiosis */ = {
 			isa = PBXGroup;
 			children = (
-				EDABA4C51AE8452E00850E20 /* AppDelegate.h */,
-				EDABA4C61AE8452E00850E20 /* AppDelegate.m */,
+				EDABA4CB1AE8452E00850E20 /* Main.storyboard */,
 				EDABA4C81AE8452E00850E20 /* ViewController.h */,
 				EDABA4C91AE8452E00850E20 /* ViewController.m */,
-				EDABA4CB1AE8452E00850E20 /* Main.storyboard */,
 				ED24652E1AE9D26A0070E079 /* GameHomeViewController.h */,
 				ED24652F1AE9D26A0070E079 /* GameHomeViewController.m */,
 				ED24652B1AE9CE390070E079 /* LearnHomeViewController.h */,
@@ -109,6 +107,8 @@
 		EDABA4C11AE8452E00850E20 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EDABA4C51AE8452E00850E20 /* AppDelegate.h */,
+				EDABA4C61AE8452E00850E20 /* AppDelegate.m */,
 				EDABA4C21AE8452E00850E20 /* Info.plist */,
 				EDABA4C31AE8452E00850E20 /* main.m */,
 			);

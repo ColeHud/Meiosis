@@ -10,7 +10,4 @@
 
 @interface LearnHomeViewController : UIViewController
 
-//start button
-@property (strong, nonatomic)UIButton *startButton;
-
 @end
