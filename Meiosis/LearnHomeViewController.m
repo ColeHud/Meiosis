@@ -48,7 +48,7 @@
     //self.image = [UIImage imageNamed:@"LaunchLogo.png"];
     
     //load in images
-    self.images = @[[UIImage imageNamed:@"interphase 1.jpg"], [UIImage imageNamed:@"prophase 1.jpg"], [UIImage imageNamed:@"metaphase 1.jpg"], [UIImage imageNamed:@"anaphase 1.jpg"], [UIImage imageNamed:@"telophase 1.jpg"], [UIImage imageNamed:@"prophase 2.jpg"], [UIImage imageNamed:@"metaphase 2.jpg"], [UIImage imageNamed:@"anaphase 2.jpg"], [UIImage imageNamed:@"telophase 2.jpg"]];
+    self.images = @[[UIImage imageNamed:@"interphase 1.png"], [UIImage imageNamed:@"prophase 1.png"], [UIImage imageNamed:@"metaphase 1.png"], [UIImage imageNamed:@"anaphase 1.png"], [UIImage imageNamed:@"telophase 1.png"], [UIImage imageNamed:@"prophase 2.png"], [UIImage imageNamed:@"metaphase 2.png"], [UIImage imageNamed:@"anaphase 2.png"], [UIImage imageNamed:@"telophase 2.png"]];
     self.count = 0;
     
     [self setMainImageContent];
