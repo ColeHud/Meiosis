@@ -25,6 +25,11 @@
 //array of images for meiosis
 @property (strong, nonatomic) NSArray *images;
 
+//label
+@property (strong, nonatomic) IBOutlet UILabel *stageLabel;
+@property (strong, nonatomic) NSArray *labels;
+
+
 @end
 
 
@@ -51,7 +56,15 @@
     self.images = @[[UIImage imageNamed:@"interphase 1.png"], [UIImage imageNamed:@"prophase 1.png"], [UIImage imageNamed:@"metaphase 1.png"], [UIImage imageNamed:@"anaphase 1.png"], [UIImage imageNamed:@"telophase 1.png"], [UIImage imageNamed:@"prophase 2.png"], [UIImage imageNamed:@"metaphase 2.png"], [UIImage imageNamed:@"anaphase 2.png"], [UIImage imageNamed:@"telophase 2.png"]];
     self.count = 0;
     
+    //set the image
     [self setMainImageContent];
+    
+    //set the labels
+    self.labels = @[@"Interphase", @"Prophase 1", @"Metaphase 1", @"Anaphase", @"Telophase 1 and Cytokinesis", @"Prophase 2", @"Metaphase 2", @"Anaphase 2", @"Telphase 2 and Cytokinesis"];
+    
+    //set the label
+    [self.stageLabel setText:[self.labels objectAtIndex:(int)self.count]];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,6 +102,7 @@
         self.count = (int)self.count + 3;
         
         [self setMainImageContent];
+        [self.stageLabel setText:[self.labels objectAtIndex:(int)self.count]];
     }
 }
 
@@ -115,6 +129,7 @@
         self.count = (int)self.count - 3;
         
         [self setMainImageContent];
+        [self.stageLabel setText:[self.labels objectAtIndex:(int)self.count]];
     }
 }
 

@@ -87,6 +87,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vQd-cz-Tus">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOb-Sm-RWz">
+                                <rect key="frame" x="11" y="377" width="298" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.9137254901960784" green="0.5725490196078431" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.87450980392156863" green="0.84387985840234125" blue="0.869678436059382" alpha="1" colorSpace="calibratedRGB"/>
@@ -97,6 +103,7 @@
                         <outlet property="nextButton" destination="de4-c2-Y8v" id="GI0-qS-Ifq"/>
                         <outlet property="playButton" destination="Dp5-Ud-isf" id="Xl3-vh-FhJ"/>
                         <outlet property="previousButton" destination="O2r-nR-3N7" id="e7p-Lt-cvG"/>
+                        <outlet property="stageLabel" destination="rOb-Sm-RWz" id="FaT-fe-M8Z"/>
                     </connections>
                 </viewController>
             </objects>
