@@ -19,6 +19,7 @@
 		EDAA9AE51AEC70EB00486AE1 /* prophase 2.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAA9ADC1AEC70EB00486AE1 /* prophase 2.png */; };
 		EDAA9AE61AEC70EB00486AE1 /* telophase 1.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAA9ADD1AEC70EB00486AE1 /* telophase 1.png */; };
 		EDAA9AE71AEC70EB00486AE1 /* telophase 2.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAA9ADE1AEC70EB00486AE1 /* telophase 2.png */; };
+		EDAA9AE91AED407100486AE1 /* hey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EDAA9AE81AED407100486AE1 /* hey.mp3 */; };
 		EDABA4C41AE8452E00850E20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA4C31AE8452E00850E20 /* main.m */; };
 		EDABA4C71AE8452E00850E20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA4C61AE8452E00850E20 /* AppDelegate.m */; };
 		EDABA4CA1AE8452E00850E20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA4C91AE8452E00850E20 /* ViewController.m */; };
@@ -54,6 +55,7 @@
 		EDAA9ADC1AEC70EB00486AE1 /* prophase 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "prophase 2.png"; path = "Artwork/meiosis transparent stages/prophase 2.png"; sourceTree = "<group>"; };
 		EDAA9ADD1AEC70EB00486AE1 /* telophase 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "telophase 1.png"; path = "Artwork/meiosis transparent stages/telophase 1.png"; sourceTree = "<group>"; };
 		EDAA9ADE1AEC70EB00486AE1 /* telophase 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "telophase 2.png"; path = "Artwork/meiosis transparent stages/telophase 2.png"; sourceTree = "<group>"; };
+		EDAA9AE81AED407100486AE1 /* hey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = hey.mp3; path = "Artwork/meiosis stages/hey.mp3"; sourceTree = "<group>"; };
 		EDABA4BE1AE8452E00850E20 /* Meiosis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meiosis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDABA4C21AE8452E00850E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDABA4C31AE8452E00850E20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				EDAA9ADC1AEC70EB00486AE1 /* prophase 2.png */,
 				EDAA9ADD1AEC70EB00486AE1 /* telophase 1.png */,
 				EDAA9ADE1AEC70EB00486AE1 /* telophase 2.png */,
+				EDAA9AE81AED407100486AE1 /* hey.mp3 */,
 				EDAA9AC21AEC5D8700486AE1 /* meiosis stages */,
 			);
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				EDAA9AC31AEC5D8700486AE1 /* meiosis stages in Resources */,
 				EDAA9AE21AEC70EB00486AE1 /* metaphase 1.png in Resources */,
 				EDAA9AE51AEC70EB00486AE1 /* prophase 2.png in Resources */,
+				EDAA9AE91AED407100486AE1 /* hey.mp3 in Resources */,
 				EDABA4CF1AE8452E00850E20 /* Images.xcassets in Resources */,
 				EDAA9AE31AEC70EB00486AE1 /* metaphase 2.png in Resources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #import "LearnHomeViewController.h"
+@import AVFoundation;
 
 @interface LearnHomeViewController ()
 
@@ -29,6 +30,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *stageLabel;
 @property (strong, nonatomic) NSArray *labels;
 
+@property (strong, nonatomic)AVAudioPlayer *_audioPlayer;
 
 @end
 
@@ -64,6 +66,15 @@
     
     //set the label
     [self.stageLabel setText:[self.labels objectAtIndex:(int)self.count]];
+    
+    
+    //create the audio player
+    // Construct URL to sound file
+    NSString *path = [NSString stringWithFormat:@"%@/hey.mp3", [[NSBundle mainBundle] resourcePath]];
+    NSURL *soundUrl = [NSURL fileURLWithPath:path];
+    
+    // Create audio player object and initialize with URL to sound
+    __audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
     
 }
 
@@ -106,11 +117,12 @@
     }
 }
 
-
-
 //play button clicked
 - (IBAction)playButtonClicked:(UIBarButtonItem *)sender
 {
+    //audio
+    [self._audioPlayer play];
+
     NSLog(@"Play clicked");
 }
 
