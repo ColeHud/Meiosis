@@ -9,6 +9,7 @@
 #import "LearnHomeViewController.h"
 @import AVFoundation;
 
+//IMPLEMENTATION
 @interface LearnHomeViewController ()
 
 //toolbar buttons
@@ -35,9 +36,7 @@
 @end
 
 
-
-
-
+//IMPLEMENTATION
 @implementation LearnHomeViewController
 
 - (void)viewDidLoad
@@ -150,8 +149,6 @@
     //set the main image to be the image at count index
     [self.mainImage setImage:[self.images objectAtIndex:self.count]];
 }
-
-
 
 
 
