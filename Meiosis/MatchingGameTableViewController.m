@@ -1,20 +1,23 @@
 //
-//  OrderGameTableViewController.m
+//  MatchingGameTableViewController.m
 //  Meiosis
 //
 //  Created by Cole on 4/27/15.
 //  Copyright (c) 2015 Cole Hudson. All rights reserved.
 //
 
-#import "OrderGameTableViewController.h"
+#import "MatchingGameTableViewController.h"
 
-@interface OrderGameTableViewController ()
+@interface MatchingGameTableViewController ()
+
+@property (strong, nonatomic) NSMutableArray *array;
 
 @end
 
-@implementation OrderGameTableViewController
+@implementation MatchingGameTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -22,6 +25,15 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    //set the array
+    self.array = @[@"Interphase", @"Prophase 1", @"Metaphase 1"];
+    
+    //print each element
+    for(int i = 0; i < _array.count; i++)
+    {
+        NSLog(@"%@", [_array objectAtIndex:i]);
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,27 +43,40 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    // Return the number of sections.
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 0;
+    return [self.array count];
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+
+//set up the cells
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"prototype" forIndexPath:indexPath];
     
     // Configure the cell...
+    int row = indexPath.row;
+    
+    if(row < (int)_array.count)
+    {
+        cell.textLabel.text = [self.array objectAtIndex:row];
+    }
+    else
+    {
+        NSLog(@"Out of range");
+    }
     
     return cell;
 }
-*/
+
+//handle selections
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%d", indexPath.row);
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"prototype" forIndexPath:indexPath];
+}
+
 
 /*
 // Override to support conditional editing of the table view.
