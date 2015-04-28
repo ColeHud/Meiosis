@@ -47,7 +47,8 @@
     [alert show];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -86,10 +87,16 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"prototype" forIndexPath:indexPath];
     
     int row = indexPath.row;
-    [self.meiosis makeSelectionAtIndex:row selectionString:cell.textLabel.text];
+    [self.meiosis makeSelectionAtIndex:row];
     
     [tableView reloadData];
-    [self.meiosis checkUserCorrectness];
+    
+    //if the user has finished selecting everything
+    if(self.meiosis.userChoices.count == self.meiosis.stages.count)
+    {
+        [self.meiosis checkUserCorrectness];
+        [self.meiosis setup];
+    }
 }
 
 

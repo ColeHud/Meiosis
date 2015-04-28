@@ -24,7 +24,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="eps-xt-aTD" kind="show" id="fUc-dd-rIU"/>
+                                    <segue destination="Kdi-tF-wkc" kind="show" id="am3-bD-Ujq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFu-uC-uYs">
@@ -89,7 +89,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOb-Sm-RWz">
                                 <rect key="frame" x="11" y="377" width="298" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -109,42 +109,6 @@
             </objects>
             <point key="canvasLocation" x="782" y="-38"/>
         </scene>
-        <!--Game Home Screen-->
-        <scene sceneID="xt8-96-YyN">
-            <objects>
-                <viewController title="Game" id="eps-xt-aTD" userLabel="Game Home Screen" customClass="GameHomeViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="QRf-S6-Ups"/>
-                        <viewControllerLayoutGuide type="bottom" id="nK8-eL-mPC"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="agV-nS-4Uu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6L-rk-vgk">
-                                <rect key="frame" x="69" y="230" width="183" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Order Meiosis">
-                                    <color key="titleColor" red="0.2196078431372549" green="0.62352941176470589" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Kdi-tF-wkc" kind="show" id="IKU-J3-P8g"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.15294117647058825" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="y6L-rk-vgk" secondAttribute="centerY" constant="0.5" id="oUi-wi-qrT"/>
-                            <constraint firstAttribute="centerX" secondItem="y6L-rk-vgk" secondAttribute="centerX" constant="-0.5" id="uiC-dd-q02"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Hd-vt-gXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="782" y="676"/>
-        </scene>
         <!--Matching Game-->
         <scene sceneID="pVb-o3-hY9">
             <objects>
@@ -162,7 +126,7 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mja-Zc-Wsd">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -178,7 +142,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kp0-2L-5SL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1336" y="676"/>
+            <point key="canvasLocation" x="782" y="680"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rCz-ck-zso">

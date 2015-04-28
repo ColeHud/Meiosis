@@ -82,13 +82,14 @@
 }
 
 //make selection
--(void)makeSelectionAtIndex:(int)index selectionString:(NSString *)selection
+-(void)makeSelectionAtIndex:(int)index
 {
     //set the color at that selection index
     UIColor *selectedColor = [UIColor redColor];
     [self.colors setObject:selectedColor atIndexedSubscript:index];
     
     //add that selected thing to the array
+    NSString *selection = [self.stages objectAtIndex:index];
     [self.userChoices addObject:selection];
 }
 
@@ -99,10 +100,17 @@
     {
         if(![[self.userChoices objectAtIndex:i] isEqualToString:[self.originalCopy objectAtIndex:i]])
         {
+            //log the user choice that was wrong
+            NSLog(@"User choice: %@, Correct choice: %@", [self.userChoices objectAtIndex:i], [self.originalCopy objectAtIndex:i]);
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Fail" message:@"That was awful" delegate:self cancelButtonTitle:@"😡" otherButtonTitles:nil, nil];
+            [alert show];
             return false;
         }
     }
     
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations" message:@"Nice Job!!!" delegate:self cancelButtonTitle:@"😀" otherButtonTitles:nil, nil];
+    [alert show];
     return true;
 }
 

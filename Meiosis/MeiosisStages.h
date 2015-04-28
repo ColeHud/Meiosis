@@ -19,7 +19,7 @@
 
 -(void)setup;
 
--(void)makeSelectionAtIndex:(int)index selectionString:(NSString*)selection;
+-(void)makeSelectionAtIndex:(int)index;
 
 -(BOOL)checkUserCorrectness;
 
