@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		ED24652D1AE9CE390070E079 /* LearnHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED24652C1AE9CE390070E079 /* LearnHomeViewController.m */; };
-		ED2465301AE9D26A0070E079 /* GameHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED24652F1AE9D26A0070E079 /* GameHomeViewController.m */; };
 		EDAA9AC31AEC5D8700486AE1 /* meiosis stages in Resources */ = {isa = PBXBuildFile; fileRef = EDAA9AC21AEC5D8700486AE1 /* meiosis stages */; };
 		EDAA9ADF1AEC70EB00486AE1 /* anaphase 1.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAA9AD61AEC70EB00486AE1 /* anaphase 1.png */; };
 		EDAA9AE01AEC70EB00486AE1 /* anaphase 2.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAA9AD71AEC70EB00486AE1 /* anaphase 2.png */; };
@@ -47,8 +46,6 @@
 /* Begin PBXFileReference section */
 		ED24652B1AE9CE390070E079 /* LearnHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnHomeViewController.h; sourceTree = "<group>"; };
 		ED24652C1AE9CE390070E079 /* LearnHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnHomeViewController.m; sourceTree = "<group>"; };
-		ED24652E1AE9D26A0070E079 /* GameHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameHomeViewController.h; sourceTree = "<group>"; };
-		ED24652F1AE9D26A0070E079 /* GameHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameHomeViewController.m; sourceTree = "<group>"; };
 		EDAA9AC21AEC5D8700486AE1 /* meiosis stages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "meiosis stages"; path = "Artwork/meiosis stages"; sourceTree = "<group>"; };
 		EDAA9AD61AEC70EB00486AE1 /* anaphase 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "anaphase 1.png"; path = "Artwork/meiosis transparent stages/anaphase 1.png"; sourceTree = "<group>"; };
 		EDAA9AD71AEC70EB00486AE1 /* anaphase 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "anaphase 2.png"; path = "Artwork/meiosis transparent stages/anaphase 2.png"; sourceTree = "<group>"; };
@@ -142,8 +139,6 @@
 				EDAA9AF51AEF004A00486AE1 /* MatchingGameTableViewController.m */,
 				EDABA4C81AE8452E00850E20 /* ViewController.h */,
 				EDABA4C91AE8452E00850E20 /* ViewController.m */,
-				ED24652E1AE9D26A0070E079 /* GameHomeViewController.h */,
-				ED24652F1AE9D26A0070E079 /* GameHomeViewController.m */,
 				ED24652B1AE9CE390070E079 /* LearnHomeViewController.h */,
 				ED24652C1AE9CE390070E079 /* LearnHomeViewController.m */,
 				EDABA4CE1AE8452E00850E20 /* Images.xcassets */,
@@ -295,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED2465301AE9D26A0070E079 /* GameHomeViewController.m in Sources */,
 				EDABA4CA1AE8452E00850E20 /* ViewController.m in Sources */,
 				EDAA9AF91AEF199B00486AE1 /* MeiosisStages.m in Sources */,
 				EDABA4C71AE8452E00850E20 /* AppDelegate.m in Sources */,

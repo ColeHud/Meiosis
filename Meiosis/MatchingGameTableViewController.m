@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) NSMutableArray *array;
 @property (strong, nonatomic) MeiosisStages *meiosis;
+@property (strong, nonatomic) NSDate *start;
 
 @end
 
@@ -31,6 +32,10 @@
     //create the mesiosis stages object
     self.meiosis = [[MeiosisStages alloc] init];
     [self.meiosis setup];
+    
+    //start the timer
+    self.start = [NSDate date];
+    
     
     //set the array
     //self.array = @[@"Interphase", @"Prophase 1", @"Metaphase 1"];
@@ -94,8 +99,12 @@
     //if the user has finished selecting everything
     if(self.meiosis.userChoices.count == self.meiosis.stages.count)
     {
-        [self.meiosis checkUserCorrectness];
+        //milliseconds
+        double timePassed_ms = [self.start timeIntervalSinceNow] * -1.0;
+        
+        [self.meiosis checkUserCorrectness: timePassed_ms];
         [self.meiosis setup];
+        self.start = [NSDate date];
     }
 }
 

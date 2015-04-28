@@ -21,7 +21,7 @@
 
 -(void)makeSelectionAtIndex:(int)index;
 
--(BOOL)checkUserCorrectness;
+-(BOOL)checkUserCorrectness:(double)time;
 
 
 @end

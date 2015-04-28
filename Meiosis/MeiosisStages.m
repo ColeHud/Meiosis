@@ -94,8 +94,10 @@
 }
 
 //check if the user got everything correct
--(BOOL)checkUserCorrectness
+-(BOOL)checkUserCorrectness:(double)time
 {
+    NSString *caption = [NSString stringWithFormat:@"%f seconds", time];
+    
     for(int i = 0; i < self.originalCopy.count; i++)
     {
         if(![[self.userChoices objectAtIndex:i] isEqualToString:[self.originalCopy objectAtIndex:i]])
@@ -103,13 +105,13 @@
             //log the user choice that was wrong
             NSLog(@"User choice: %@, Correct choice: %@", [self.userChoices objectAtIndex:i], [self.originalCopy objectAtIndex:i]);
             
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Fail" message:@"That was awful" delegate:self cancelButtonTitle:@"😡" otherButtonTitles:nil, nil];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Fail" message:caption delegate:self cancelButtonTitle:@"😡" otherButtonTitles:nil, nil];
             [alert show];
             return false;
         }
     }
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations" message:@"Nice Job!!!" delegate:self cancelButtonTitle:@"😀" otherButtonTitles:nil, nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations" message:caption delegate:self cancelButtonTitle:@"😀" otherButtonTitles:nil, nil];
     [alert show];
     return true;
 }
