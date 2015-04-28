@@ -33,13 +33,15 @@
     [self.meiosis setup];
     
     //set the array
-    self.array = @[@"Interphase", @"Prophase 1", @"Metaphase 1"];
+    //self.array = @[@"Interphase", @"Prophase 1", @"Metaphase 1"];
     
+    /*
     //print each element
     for(int i = 0; i < _array.count; i++)
     {
         NSLog(@"%@", [_array objectAtIndex:i]);
     }
+     */
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Order Game" message:@"Tap the stages in the order they occur." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
     [alert show];
@@ -55,7 +57,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.array count];
+    return [self.meiosis.stages count];
 }
 
 
@@ -67,10 +69,11 @@
     // Configure the cell...
     int row = indexPath.row;
     
-    if(row < (int)_array.count)
+    if(row < (int)self.meiosis.stages.count)
     {
-        cell.textLabel.text = [self.array objectAtIndex:row];
-        cell.textLabel.textColor = [UIColor redColor];
+        //set the text and color
+        cell.textLabel.text = [self.meiosis.stages objectAtIndex:row];
+        cell.textLabel.textColor = [self.meiosis.colors objectAtIndex:row];
     }
     else
     {
@@ -85,6 +88,9 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"prototype" forIndexPath:indexPath];
+    
+    int row = indexPath.row;
+    [self.meiosis makeSelectionAtIndex:row selectionString:cell.textLabel.text];
     
     [tableView reloadData];
 }

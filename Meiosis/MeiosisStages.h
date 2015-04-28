@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface MeiosisStages : NSObject
 
@@ -16,5 +17,8 @@
 @property (strong, nonatomic) NSMutableArray *userChoices;
 
 -(void)setup;
+
+-(void)makeSelectionAtIndex:(int)index selectionString:(NSString*)selection;
+
 
 @end
