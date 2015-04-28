@@ -7,10 +7,12 @@
 //
 
 #import "MatchingGameTableViewController.h"
+#import "MeiosisStages.h"
 
 @interface MatchingGameTableViewController ()
 
 @property (strong, nonatomic) NSMutableArray *array;
+@property (strong, nonatomic) MeiosisStages *meiosis;
 
 @end
 
@@ -26,6 +28,10 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    //create the mesiosis stages object
+    self.meiosis = [[MeiosisStages alloc] init];
+    [self.meiosis setup];
+    
     //set the array
     self.array = @[@"Interphase", @"Prophase 1", @"Metaphase 1"];
     
@@ -34,6 +40,9 @@
     {
         NSLog(@"%@", [_array objectAtIndex:i]);
     }
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Order Game" message:@"Tap the stages in the order they occur." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+    [alert show];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -61,6 +70,7 @@
     if(row < (int)_array.count)
     {
         cell.textLabel.text = [self.array objectAtIndex:row];
+        cell.textLabel.textColor = [UIColor redColor];
     }
     else
     {
@@ -73,8 +83,10 @@
 //handle selections
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%d", indexPath.row);
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"prototype" forIndexPath:indexPath];
+    
+    [tableView reloadData];
 }
 
 

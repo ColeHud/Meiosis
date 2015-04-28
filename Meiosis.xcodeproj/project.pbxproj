@@ -23,6 +23,7 @@
 		EDAA9AEB1AEE7E1E00486AE1 /* learn.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAA9AEA1AEE7E1E00486AE1 /* learn.png */; };
 		EDAA9AED1AEE7F5400486AE1 /* game.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAA9AEC1AEE7F5400486AE1 /* game.png */; };
 		EDAA9AF61AEF004A00486AE1 /* MatchingGameTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAA9AF51AEF004A00486AE1 /* MatchingGameTableViewController.m */; };
+		EDAA9AF91AEF199B00486AE1 /* MeiosisStages.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAA9AF81AEF199B00486AE1 /* MeiosisStages.m */; };
 		EDABA4C41AE8452E00850E20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA4C31AE8452E00850E20 /* main.m */; };
 		EDABA4C71AE8452E00850E20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA4C61AE8452E00850E20 /* AppDelegate.m */; };
 		EDABA4CA1AE8452E00850E20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDABA4C91AE8452E00850E20 /* ViewController.m */; };
@@ -63,6 +64,8 @@
 		EDAA9AEC1AEE7F5400486AE1 /* game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = game.png; path = Artwork/game.png; sourceTree = "<group>"; };
 		EDAA9AF41AEF004A00486AE1 /* MatchingGameTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchingGameTableViewController.h; sourceTree = "<group>"; };
 		EDAA9AF51AEF004A00486AE1 /* MatchingGameTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchingGameTableViewController.m; sourceTree = "<group>"; };
+		EDAA9AF71AEF199B00486AE1 /* MeiosisStages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeiosisStages.h; sourceTree = "<group>"; };
+		EDAA9AF81AEF199B00486AE1 /* MeiosisStages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeiosisStages.m; sourceTree = "<group>"; };
 		EDABA4BE1AE8452E00850E20 /* Meiosis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meiosis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDABA4C21AE8452E00850E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDABA4C31AE8452E00850E20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				EDABA4CB1AE8452E00850E20 /* Main.storyboard */,
+				EDAA9AF71AEF199B00486AE1 /* MeiosisStages.h */,
+				EDAA9AF81AEF199B00486AE1 /* MeiosisStages.m */,
 				EDAA9AF41AEF004A00486AE1 /* MatchingGameTableViewController.h */,
 				EDAA9AF51AEF004A00486AE1 /* MatchingGameTableViewController.m */,
 				EDABA4C81AE8452E00850E20 /* ViewController.h */,
@@ -292,6 +297,7 @@
 			files = (
 				ED2465301AE9D26A0070E079 /* GameHomeViewController.m in Sources */,
 				EDABA4CA1AE8452E00850E20 /* ViewController.m in Sources */,
+				EDAA9AF91AEF199B00486AE1 /* MeiosisStages.m in Sources */,
 				EDABA4C71AE8452E00850E20 /* AppDelegate.m in Sources */,
 				ED24652D1AE9CE390070E079 /* LearnHomeViewController.m in Sources */,
 				EDAA9AF61AEF004A00486AE1 /* MatchingGameTableViewController.m in Sources */,
