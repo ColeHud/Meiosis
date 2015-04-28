@@ -15,10 +15,13 @@
 @property (strong, nonatomic) NSMutableArray *colors;
 @property (strong, nonatomic) NSMutableArray *original;
 @property (strong, nonatomic) NSMutableArray *userChoices;
+@property (strong, nonatomic) NSMutableArray *originalCopy;
 
 -(void)setup;
 
 -(void)makeSelectionAtIndex:(int)index selectionString:(NSString*)selection;
+
+-(BOOL)checkUserCorrectness;
 
 
 @end

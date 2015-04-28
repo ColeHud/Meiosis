@@ -19,6 +19,7 @@
 -(void)setup
 {
     self.original = [[NSMutableArray alloc] init];
+    self.originalCopy = [[NSMutableArray alloc] init];
     self.colors = [[NSMutableArray alloc] init];
     self.stages = [[NSMutableArray alloc] init];
     self.userChoices = [[NSMutableArray alloc] init];
@@ -31,31 +32,44 @@
     [self.original addObject:@"Metaphase 1"];
     [self.original addObject:@"Anaphase 1"];
     [self.original addObject:@"Telophase 1"];
-    [self.original addObject:@"Cytokinesis"];
+    [self.original addObject:@"Cytokinesis 1"];
     [self.original addObject:@"Prophase 2"];
     [self.original addObject:@"Metaphase 2"];
     [self.original addObject:@"Anaphase 2"];
     [self.original addObject:@"Telophase 2"];
-    [self.original addObject:@"Cytokinesis"];
+    [self.original addObject:@"Cytokinesis 2"];
     
+    
+    //copy
+    [self.originalCopy addObject:@"Interphase"];
+    [self.originalCopy addObject:@"Prophase 1"];
+    [self.originalCopy addObject:@"Metaphase 1"];
+    [self.originalCopy addObject:@"Anaphase 1"];
+    [self.originalCopy addObject:@"Telophase 1"];
+    [self.originalCopy addObject:@"Cytokinesis 1"];
+    [self.originalCopy addObject:@"Prophase 2"];
+    [self.originalCopy addObject:@"Metaphase 2"];
+    [self.originalCopy addObject:@"Anaphase 2"];
+    [self.originalCopy addObject:@"Telophase 2"];
+    [self.originalCopy addObject:@"Cytokinesis 2"];
     
     for(int i = 0; i < self.original.count; i++)
     {
-        NSLog(@"%@", [self.original objectAtIndex:i]);
+        //NSLog(@"%@", [self.original objectAtIndex:i]);
     }
-    
     int count = self.original.count;
     
     //set the randomized stages and the order answer key
-    for(int i = 0; i < count - 1; i++)
+    for(int i = 0; i < count; i++)
     {
         int index = arc4random() % self.original.count;
-        NSLog(@"%d", index);
+        
         NSString *string = [self.original objectAtIndex:index];
         
         [self.stages addObject:string];
         [self.original removeObject: [self.original objectAtIndex:index]];
     }
+    
     
     //set the colors array
     for(int i = 0; i < count; i++)
@@ -76,6 +90,20 @@
     
     //add that selected thing to the array
     [self.userChoices addObject:selection];
+}
+
+//check if the user got everything correct
+-(BOOL)checkUserCorrectness
+{
+    for(int i = 0; i < self.originalCopy.count; i++)
+    {
+        if(![[self.userChoices objectAtIndex:i] isEqualToString:[self.originalCopy objectAtIndex:i]])
+        {
+            return false;
+        }
+    }
+    
+    return true;
 }
 
 

@@ -68,17 +68,13 @@
     
     // Configure the cell...
     int row = indexPath.row;
+    //NSLog(@"%d", row);
     
-    if(row < (int)self.meiosis.stages.count)
-    {
-        //set the text and color
-        cell.textLabel.text = [self.meiosis.stages objectAtIndex:row];
-        cell.textLabel.textColor = [self.meiosis.colors objectAtIndex:row];
-    }
-    else
-    {
-        NSLog(@"Out of range");
-    }
+    
+    //set the text and color
+    cell.textLabel.text = [self.meiosis.stages objectAtIndex:row];
+    cell.textLabel.textColor = [self.meiosis.colors objectAtIndex:row];
+   
     
     return cell;
 }
@@ -93,6 +89,7 @@
     [self.meiosis makeSelectionAtIndex:row selectionString:cell.textLabel.text];
     
     [tableView reloadData];
+    [self.meiosis checkUserCorrectness];
 }
 
 
