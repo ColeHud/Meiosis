@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		ED24652D1AE9CE390070E079 /* LearnHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED24652C1AE9CE390070E079 /* LearnHomeViewController.m */; };
+		ED7425201AF080240022F262 /* anaphase1-telophase1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED7425171AF080240022F262 /* anaphase1-telophase1.mp3 */; };
+		ED7425211AF080240022F262 /* anaphase2-telophase2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED7425181AF080240022F262 /* anaphase2-telophase2.mp3 */; };
+		ED7425221AF080240022F262 /* cytokinesis1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED7425191AF080240022F262 /* cytokinesis1.mp3 */; };
+		ED7425231AF080240022F262 /* cytokinesis2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED74251A1AF080240022F262 /* cytokinesis2.mp3 */; };
+		ED7425241AF080240022F262 /* interphase-prophase1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED74251B1AF080240022F262 /* interphase-prophase1.mp3 */; };
+		ED7425251AF080240022F262 /* metaphase1-anaphase1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED74251C1AF080240022F262 /* metaphase1-anaphase1.mp3 */; };
+		ED7425261AF080240022F262 /* metaphase2-anaphase2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED74251D1AF080240022F262 /* metaphase2-anaphase2.mp3 */; };
+		ED7425271AF080240022F262 /* prophase1-metaphase1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED74251E1AF080240022F262 /* prophase1-metaphase1.mp3 */; };
+		ED7425281AF080240022F262 /* prophase2-metaphase2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED74251F1AF080240022F262 /* prophase2-metaphase2.mp3 */; };
 		EDAA9AC31AEC5D8700486AE1 /* meiosis stages in Resources */ = {isa = PBXBuildFile; fileRef = EDAA9AC21AEC5D8700486AE1 /* meiosis stages */; };
 		EDAA9ADF1AEC70EB00486AE1 /* anaphase 1.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAA9AD61AEC70EB00486AE1 /* anaphase 1.png */; };
 		EDAA9AE01AEC70EB00486AE1 /* anaphase 2.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAA9AD71AEC70EB00486AE1 /* anaphase 2.png */; };
@@ -46,6 +55,15 @@
 /* Begin PBXFileReference section */
 		ED24652B1AE9CE390070E079 /* LearnHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnHomeViewController.h; sourceTree = "<group>"; };
 		ED24652C1AE9CE390070E079 /* LearnHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnHomeViewController.m; sourceTree = "<group>"; };
+		ED7425171AF080240022F262 /* anaphase1-telophase1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "anaphase1-telophase1.mp3"; path = "Audio/anaphase1-telophase1.mp3"; sourceTree = "<group>"; };
+		ED7425181AF080240022F262 /* anaphase2-telophase2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "anaphase2-telophase2.mp3"; path = "Audio/anaphase2-telophase2.mp3"; sourceTree = "<group>"; };
+		ED7425191AF080240022F262 /* cytokinesis1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cytokinesis1.mp3; path = Audio/cytokinesis1.mp3; sourceTree = "<group>"; };
+		ED74251A1AF080240022F262 /* cytokinesis2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cytokinesis2.mp3; path = Audio/cytokinesis2.mp3; sourceTree = "<group>"; };
+		ED74251B1AF080240022F262 /* interphase-prophase1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "interphase-prophase1.mp3"; path = "Audio/interphase-prophase1.mp3"; sourceTree = "<group>"; };
+		ED74251C1AF080240022F262 /* metaphase1-anaphase1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "metaphase1-anaphase1.mp3"; path = "Audio/metaphase1-anaphase1.mp3"; sourceTree = "<group>"; };
+		ED74251D1AF080240022F262 /* metaphase2-anaphase2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "metaphase2-anaphase2.mp3"; path = "Audio/metaphase2-anaphase2.mp3"; sourceTree = "<group>"; };
+		ED74251E1AF080240022F262 /* prophase1-metaphase1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "prophase1-metaphase1.mp3"; path = "Audio/prophase1-metaphase1.mp3"; sourceTree = "<group>"; };
+		ED74251F1AF080240022F262 /* prophase2-metaphase2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "prophase2-metaphase2.mp3"; path = "Audio/prophase2-metaphase2.mp3"; sourceTree = "<group>"; };
 		EDAA9AC21AEC5D8700486AE1 /* meiosis stages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "meiosis stages"; path = "Artwork/meiosis stages"; sourceTree = "<group>"; };
 		EDAA9AD61AEC70EB00486AE1 /* anaphase 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "anaphase 1.png"; path = "Artwork/meiosis transparent stages/anaphase 1.png"; sourceTree = "<group>"; };
 		EDAA9AD71AEC70EB00486AE1 /* anaphase 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "anaphase 2.png"; path = "Artwork/meiosis transparent stages/anaphase 2.png"; sourceTree = "<group>"; };
@@ -116,6 +134,15 @@
 				EDAA9AE81AED407100486AE1 /* hey.mp3 */,
 				EDAA9AEA1AEE7E1E00486AE1 /* learn.png */,
 				EDAA9AEC1AEE7F5400486AE1 /* game.png */,
+				ED7425171AF080240022F262 /* anaphase1-telophase1.mp3 */,
+				ED7425181AF080240022F262 /* anaphase2-telophase2.mp3 */,
+				ED7425191AF080240022F262 /* cytokinesis1.mp3 */,
+				ED74251A1AF080240022F262 /* cytokinesis2.mp3 */,
+				ED74251B1AF080240022F262 /* interphase-prophase1.mp3 */,
+				ED74251C1AF080240022F262 /* metaphase1-anaphase1.mp3 */,
+				ED74251D1AF080240022F262 /* metaphase2-anaphase2.mp3 */,
+				ED74251E1AF080240022F262 /* prophase1-metaphase1.mp3 */,
+				ED74251F1AF080240022F262 /* prophase2-metaphase2.mp3 */,
 				EDAA9AC21AEC5D8700486AE1 /* meiosis stages */,
 			);
 			sourceTree = "<group>";
@@ -256,21 +283,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED7425221AF080240022F262 /* cytokinesis1.mp3 in Resources */,
 				EDAA9ADF1AEC70EB00486AE1 /* anaphase 1.png in Resources */,
 				EDAA9AE41AEC70EB00486AE1 /* prophase 1.png in Resources */,
 				EDAA9AE71AEC70EB00486AE1 /* telophase 2.png in Resources */,
 				EDAA9AE01AEC70EB00486AE1 /* anaphase 2.png in Resources */,
+				ED7425281AF080240022F262 /* prophase2-metaphase2.mp3 in Resources */,
 				EDABA4CD1AE8452E00850E20 /* Main.storyboard in Resources */,
+				ED7425201AF080240022F262 /* anaphase1-telophase1.mp3 in Resources */,
+				ED7425211AF080240022F262 /* anaphase2-telophase2.mp3 in Resources */,
+				ED7425261AF080240022F262 /* metaphase2-anaphase2.mp3 in Resources */,
 				EDABA4E81AE8497200850E20 /* LaunchLogo.png in Resources */,
 				EDAA9AE11AEC70EB00486AE1 /* interphase 1.png in Resources */,
 				EDAA9AED1AEE7F5400486AE1 /* game.png in Resources */,
 				EDAA9AE61AEC70EB00486AE1 /* telophase 1.png in Resources */,
 				EDABA4D21AE8452E00850E20 /* LaunchScreen.xib in Resources */,
+				ED7425271AF080240022F262 /* prophase1-metaphase1.mp3 in Resources */,
 				EDAA9AC31AEC5D8700486AE1 /* meiosis stages in Resources */,
 				EDAA9AE21AEC70EB00486AE1 /* metaphase 1.png in Resources */,
 				EDAA9AE51AEC70EB00486AE1 /* prophase 2.png in Resources */,
 				EDAA9AE91AED407100486AE1 /* hey.mp3 in Resources */,
 				EDABA4CF1AE8452E00850E20 /* Images.xcassets in Resources */,
+				ED7425231AF080240022F262 /* cytokinesis2.mp3 in Resources */,
+				ED7425251AF080240022F262 /* metaphase1-anaphase1.mp3 in Resources */,
+				ED7425241AF080240022F262 /* interphase-prophase1.mp3 in Resources */,
 				EDAA9AEB1AEE7E1E00486AE1 /* learn.png in Resources */,
 				EDAA9AE31AEC70EB00486AE1 /* metaphase 2.png in Resources */,
 			);

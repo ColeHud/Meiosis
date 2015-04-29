@@ -33,6 +33,9 @@
 
 @property (strong, nonatomic)AVAudioPlayer *_audioPlayer;
 
+//audio
+@property (strong, nonatomic) NSArray *audio;
+
 @end
 
 
@@ -61,19 +64,14 @@
     [self setMainImageContent];
     
     //set the labels
-    self.labels = @[@"Interphase", @"Prophase 1", @"Metaphase 1", @"Anaphase", @"Telophase 1 and Cytokinesis", @"Prophase 2", @"Metaphase 2", @"Anaphase 2", @"Telphase 2 and Cytokinesis"];
+    self.labels = @[@"Interphase and Prophase 1", @"Prophase 1 Metaphase 1", @"Metaphase 1 and Anaphase 1", @"Anaphase 1 and Telophase 1", @"Cytokinesis", @"Prophase 2 and Metaphase 2", @"Metaphase 2 and Anaphase 2", @"Anaphase 2 and Telophase 2", @"Cytokinesis"];
+    
+    //set the audio
+    self.audio = @[@"interphase-prophase1.mp3", @"prophase1-metaphase1.mp3", @"metaphase1-anaphase1.mp3", @"anaphase1-telphase1.mp3", @"cytokinesis1.mp3", @"prophase2-metaphase2.mp3", @"metaphase2-anaphase2.mp3", @"anaphase2-telophase2.mp3", @"cytokinesis2.mp3"];
     
     //set the label
     [self.stageLabel setText:[self.labels objectAtIndex:(int)self.count]];
     
-    
-    //create the audio player
-    // Construct URL to sound file
-    NSString *path = [NSString stringWithFormat:@"%@/hey.mp3", [[NSBundle mainBundle] resourcePath]];
-    NSURL *soundUrl = [NSURL fileURLWithPath:path];
-    
-    // Create audio player object and initialize with URL to sound
-    __audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
     
 }
 
@@ -119,6 +117,17 @@
 //play button clicked
 - (IBAction)playButtonClicked:(UIBarButtonItem *)sender
 {
+    //get the name of the current audio
+    NSString *audioName = [self.audio objectAtIndex:self.count];
+    
+    //create the audio player
+    // Construct URL to sound file
+    NSString *path = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], audioName];
+    NSURL *soundUrl = [NSURL fileURLWithPath:path];
+    
+    // Create audio player object and initialize with URL to sound
+    __audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    
     //audio
     [self._audioPlayer play];
 
